@@ -1,0 +1,51 @@
+1. Register User
+Endpoint : POST http://localhost:5000/api/auth/register
+body content :
+{
+  "name": "John Doe",
+  "email": "john@example.com",
+  "password": "password123"
+}
+
+2. Login User
+Endpoint : POST http://localhost:5000/api/auth/login
+body content :
+{
+  "email": "john@example.com",
+  "password": "password123"
+}
+
+
+3. Add Workout
+Endpoint : POST http://localhost:5000/api/workouts
+body content :
+{
+  "workoutName": "Morning Running",
+  "category": "Cardio",
+  "duration": 45,
+  "caloriesBurned": 350,
+  "workoutDate": "2026-09-26"
+}
+
+4. Get All Workouts
+Endpoint : GET http://localhost:5000/api/workouts
+body content : None
+
+
+5. Workout Recommendation
+Endpoint : POST http://localhost:5000/api/ai/recommendation
+body content :
+{
+  "age": 25,
+  "fitnessGoal": "Weight loss",
+  "experienceLevel": "Beginner"
+}
+
+6. Fitness Insights
+Endpoint : POST http://localhost:5000/api/ai/insights
+body content :
+{
+  "totalWorkouts": 15,
+  "averageWorkoutDuration": 42,
+  "caloriesBurned": 5250
+}
